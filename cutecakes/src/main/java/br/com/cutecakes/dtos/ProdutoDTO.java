@@ -1,5 +1,7 @@
 package br.com.cutecakes.dtos;
 
+import java.math.BigDecimal;
+
 import lombok.Data;
 
 /**
@@ -10,7 +12,7 @@ public class ProdutoDTO {
     private Long id;
     private String nome;
     private String descricao;
-    private double preco;
+    private BigDecimal preco;
 
     // Getters e Setters
 }

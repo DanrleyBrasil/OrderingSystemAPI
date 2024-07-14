@@ -1,5 +1,7 @@
 package br.com.cutecakes.entities;
 
+import java.math.BigDecimal;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,7 +18,7 @@ public class ItemPedido {
     
     private int quantidade;
     
-    private double preco;
+    private BigDecimal preco;
 
     @ManyToOne
     @JoinColumn(name = "produto_id")

@@ -1,5 +1,7 @@
 package br.com.cutecakes.dtos;
 
+import java.math.BigDecimal;
+
 import lombok.Data;
 
 /**
@@ -9,7 +11,7 @@ import lombok.Data;
 public class ItemPedidoDTO {
     private Long id;
     private int quantidade;
-    private double preco;
+    private BigDecimal preco;
     private Long produtoId;
     private Long pedidoId;
 

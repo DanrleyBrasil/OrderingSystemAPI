@@ -1,5 +1,6 @@
 package br.com.cutecakes.entities;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -24,7 +25,7 @@ public class Produto {
     
     private String descricao;
     
-    private double preco;
+    private BigDecimal preco;
 
     @OneToMany(mappedBy = "produto")
     private List<ItemPedido> itensPedido;
